@@ -15,7 +15,7 @@ JS for gameplay:
 Version 2.0:
 Responsive Design
 Collect Character Images
-Photoshop Images
+Photoshop Images + Make Favicon
 Add Character Selection Modal
 Flush out the style
 Write character selection functionality

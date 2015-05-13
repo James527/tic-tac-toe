@@ -1,0 +1,42 @@
+/*  ELEMENT STYLINGS  */
+
+body {
+
+}
+
+header {
+	background-color: #ccc;
+}
+
+h1, h5 {
+	text-align: center;
+}
+
+footer {
+	background-color: #ccc;
+}
+
+/*  CLASS & ID STYLINGS  */
+
+.main-container {
+
+}
+
+.game-container {
+
+}
+
+.gameboard {
+
+}
+
+.cell {
+	width: 150px;
+	height: 150px;
+	background-color: purple;
+	margin: 30px;
+}
+
+#round{
+	text-align: center;
+}
