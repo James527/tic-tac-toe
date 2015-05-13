@@ -1,0 +1,13 @@
+Tic Tac Toe: User Story
+
+Choose your character page:
+User must pick one of four cute animals to play as. Also the user must choose to be either X’s or O’s. (If there is a player 2, repeat)
+
+Game page:
+There are nine positions on the board.
+Nine is the number of total moves possible.
+Five is the number of the fewest moves that can be made before the game ends.
+The user is given the first move, then turns switch back and forth until the game ends.
+
+The game ends when either the user wins, player 2 wins, or the game is a tie.
+User is given the option of a rematch.

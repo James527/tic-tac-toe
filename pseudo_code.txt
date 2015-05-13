@@ -1,0 +1,30 @@
+TIC-TAC-TOE GAME
+
+MVP:
+
+
+
+
+
+Basics:
+-Use a framework
+-Collect Images
+-HTML Pages to code:
+	*Character Page
+	*Game Page
+	Instead of separate pages, should make these modals.
+
+-Using CSS, drape your pages over the framework
+-Add Custom Style
+
+Hard Stuff:
+-Add jQuery library
+-Write character selection functionality
+	*Character Selection
+	*X’s or O’s
+-Write gameplay functionality
+	*Alternating turns
+	*Picking a position move
+	*Checking for a win/checking for a tie
+	*Game over/Reset
+	*Rounds counter
