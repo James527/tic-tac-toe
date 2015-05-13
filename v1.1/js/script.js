@@ -1,10 +1,13 @@
 $(document).ready(function() {
 
-	//X & O's Switch
 	var playerOne = 'X';
 	var playerTwo = 'O';
   var currentPlayer = playerOne;
+  var cells = {a: '', b: '', c: '', d: '', e: '', f: '', g: '', h: '', i: ''}
 
+  alert(cells['a']);
+
+  //This function is an X/O Switch
   function switchPlayer(player) {
     if (player == 'X') {
       return currentPlayer = 'O';
@@ -13,19 +16,29 @@ $(document).ready(function() {
       return currentPlayer = 'X';
     }
   }
-  // switchPlayer(currentPlayer);
-  // alert(currentPlayer);
 
-	//Game Play Array
-  var cells = { a: '', b: '', c: '', d: '', e: '', f: '', g: '', h: '', i: ''}
-
-
-	//Display Move
+	//This function creates a New Game Play Array
+  function gameReset() {
+    return cells = { a: '', b: '', c: '', d: '', e: '', f: '', g: '', h: '', i: ''}
+  }
 
 	//Event Listener for cell clicks
+  $('.cell').click(function() {
+    alert(currentPlayer);
+  });
+
+  //Event Listener for Reset Game Button
+  $('#reset').click(function() {
+    
+  });
+
+  //Display Move
 
 	//Check for End Game
+  function getWinner() {
 
-	//Reset Game
+  }
+
+  // alert(currentPlayer);
 
 })
