@@ -2,11 +2,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 body {
-	background-color: lightgreen;
+	background-color: #fff;
 }
 
 header {
 	background-color: #ccc;
+	height: 100px;
 }
 
 h1, h5 {
@@ -15,15 +16,76 @@ h1, h5 {
 
 footer {
 	background-color: #ccc;
+	height: 200px;
 }
+
 
 /*  GRID STYLINGS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.row {
+	clear: both;
+}
+
+.column {
+	float: left;
+}
+
+.oneC {
+  width: 8.33333%;
+}
+
+.twoC {
+  width: 16.66666%;
+}
+
+.threeC {
+  width: 25%;
+}
+
+.fourC {
+  width: 33.33333%;
+}
+
+.fiveC {
+  width: 41.66666%;
+}
+
+.sixC, .halfC {
+  width: 50%;
+}
+
+.sevenC {
+  width: 58.33333%;
+}
+
+.eightC {
+  width: 66.66666%;
+}
+
+.nineC {
+  width: 75%;
+}
+
+.tenC {
+  width: 83.33333%;
+}
+
+.elevenC {
+  width: 91.66666%;
+}
+
+.twelveC, .fullC {
+  width: 100%;
+}
 
 
-
-/*  CLASS & ID STYLINGS
+/*  OTHER CLASS & ID STYLINGS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .main-container {
@@ -39,10 +101,12 @@ footer {
 }
 
 .cell {
-	width: 150px;
-	height: 150px;
 	background-color: purple;
-	margin: 30px;
+	margin: 15px;
+	border: solid #000 7px;
+	text-align: center;
+	min-height: 70px;
+	padding-top: 50px;
 }
 
 #round{
