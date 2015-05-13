@@ -1,30 +1,33 @@
-TIC-TAC-TOE GAME
+PSEUDO-CODE: TIC-TAC-TOE GAME
 
-MVP:
+MVP/Version 1.0:
 
+Create README.md file
+Code out basic HTML
+Give it a simple CSS Framework
+Add a basic Stylings
+JS for gameplay:
+	-Player move event listeners
+	-Switching Turns
+	-Check for a win/End Game visuals
+	-Replay option
 
+Version 2.0:
+Responsive Design
+Collect Character Images
+Photoshop Images
+Add Character Selection Modal
+Flush out the style
+Write character selection functionality
+	-Character Selection
+	-X’s or O’s
+	-Start Game button
+Add to gameplay functionality
+	-Track rounds and Game Outcomes
+	-End Game Enhanced Visuals
 
-
-
-Basics:
--Use a framework
--Collect Images
--HTML Pages to code:
-	*Character Page
-	*Game Page
-	Instead of separate pages, should make these modals.
-
--Using CSS, drape your pages over the framework
--Add Custom Style
-
-Hard Stuff:
--Add jQuery library
--Write character selection functionality
-	*Character Selection
-	*X’s or O’s
--Write gameplay functionality
-	*Alternating turns
-	*Picking a position move
-	*Checking for a win/checking for a tie
-	*Game over/Reset
-	*Rounds counter
+Version 3.0:
+Optional Move Timer
+Data Storage
+Enhanced Gameplay Animations
+Computer Player
