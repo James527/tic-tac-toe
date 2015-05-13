@@ -8,10 +8,11 @@ body {
 header {
 	background-color: #ccc;
 	height: 100px;
+	text-align: center;
 }
 
-h1, h5 {
-	text-align: center;
+h1 {
+	font-size: 4em;
 }
 
 footer {
@@ -30,6 +31,7 @@ footer {
 
 .row {
 	clear: both;
+	width: 100%;
 }
 
 .column {
@@ -89,11 +91,11 @@ footer {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .main-container {
-
 }
 
 .game-container {
-
+	margin: 25px 0;
+	min-height: 500px;
 }
 
 .gameboard {
@@ -103,7 +105,6 @@ footer {
 .cell {
 	background-color: purple;
 	margin: 15px;
-	border: solid #000 7px;
 	text-align: center;
 	min-height: 70px;
 	padding-top: 50px;
@@ -111,4 +112,19 @@ footer {
 
 #round{
 	text-align: center;
+	height: 25px;
+}
+
+#cellA, #cellB, #cellD, #cellE, #cellG, #cellH {
+	border-right: solid #000 7px;
+	border-bottom: solid #000 7px;
+}
+
+#cellC, #cellF, #cellI {
+	border-bottom: solid #000 7px;
+}
+
+footer .column {
+	margin: 10px 0 0 0;
+	float: right;
 }
