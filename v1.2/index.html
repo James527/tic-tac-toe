@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Tic Tac Toe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  	<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/meyerreset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  	<script src="js/script.js"></script>
+
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+	<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<div class="container">
+		<header class="row">
+			<h5>Tic Tac Toe</h5>
+			<h1>Player 1 vs Player 2</h1>
+		</header>
+		<div class="container game-container">
+			<div class="row">
+				<div class="column threeC">Left Side</div>
+					<div class="column sixC">
+						<div class="row container">
+							<div class="row">
+								<div class="column fourC">
+									<div class="cell" id="cellA" value="a"></div>
+								</div>
+								<div class="column fourC">
+									<div class="cell" id="cellB" value="b"></div>
+								</div>
+								<div class="column fourC">
+									<div class="cell" id="cellC" value="c"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column fourC">
+									<div class="cell" id="cellD" value="d"></div>
+								</div>
+								<div class="column fourC">
+									<div class="cell" id="cellE" value="e"></div>
+								</div>
+								<div class="column fourC">
+									<div class="cell" id="cellF" value="f"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column fourC">
+									<div class="cell" id="cellG" value="g"></div>
+								</div>
+								<div class="column fourC">
+									<div class="cell" id="cellH" value="h"></div>
+								</div>
+								<div class="column fourC">
+									<div class="cell" id="cellI" value="i"></div>
+								</div>
+							</div>
+						</div><!-- /End of gameboard -->
+					</div>	
+				<div class="column threeC">Right Side</div>
+			</div>
+			<div class="row">
+				<button id="reset" value="reset">Reset</button>
+			</div>
+		</div><!-- /End of Game-Container -->
+		<footer>
+			<div class="row">
+				<div class="column halfC">
+					<span>2015 Copywrite, James Rutledge, General Assembly</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

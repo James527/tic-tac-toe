@@ -1,0 +1,131 @@
+/*  BASIC ELEMENT STYLINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+	background-color: #fff;
+}
+
+header {
+	background-color: #ccc;
+	height: 100px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+footer {
+	background-color: #ccc;
+	height: 200px;
+}
+
+
+/*  GRID STYLINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.row {
+	clear: both;
+	width: 100%;
+}
+
+.column {
+	float: left;
+}
+
+.oneC {
+  width: 8.33333%;
+}
+
+.twoC {
+  width: 16.66666%;
+}
+
+.threeC {
+  width: 25%;
+}
+
+.fourC {
+  width: 33.33333%;
+}
+
+.fiveC {
+  width: 41.66666%;
+}
+
+.sixC, .halfC {
+  width: 50%;
+}
+
+.sevenC {
+  width: 58.33333%;
+}
+
+.eightC {
+  width: 66.66666%;
+}
+
+.nineC {
+  width: 75%;
+}
+
+.tenC {
+  width: 83.33333%;
+}
+
+.elevenC {
+  width: 91.66666%;
+}
+
+.twelveC, .fullC {
+  width: 100%;
+}
+
+
+/*  OTHER CLASS & ID STYLINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main-container {
+}
+
+.game-container {
+	margin: 25px 0 0 0;
+	min-height: 500px;
+}
+
+.gameboard {
+
+}
+
+.cell {
+	background-color: purple;
+	margin: 15px;
+	text-align: center;
+	min-height: 70px;
+	padding-top: 50px;
+}
+
+#reset{
+	text-align: center;
+	height: 25px;
+	margin: 15px 48.1% 0 48.1%;
+}
+
+#cellA, #cellB, #cellD, #cellE, #cellG, #cellH {
+	border-right: solid #000 7px;
+	border-bottom: solid #000 7px;
+}
+
+#cellC, #cellF, #cellI {
+	border-bottom: solid #000 7px;
+}
+
+footer .column {
+	margin: 10px 0 0 0;
+	float: right;
+}
