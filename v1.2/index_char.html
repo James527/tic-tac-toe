@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Tic Tac Toe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+  	<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/meyerreset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css">
+
+.charModal {
+	height: 500px;
+}
+
+#charbox {
+	background-color: #ccc;
+	margin: 100px 8.33333%;
+	padding: 50px 0 0 0;
+	height: 250px;
+	text-align: center;
+}
+
+#charbox div {
+	margin:45px 0 0 0;
+}
+
+#charbox button {
+	height: 60px;
+	width: 60px;
+	margin:0 30px;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+p {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+	</style>
+
+	<!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  	<script src="js/script.js"></script>
+
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+	<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<div class="container">
+		<header class="row">
+			<h5>Tic Tac Toe</h5>
+			<h1><span id="playerOne">Player 1</span><span id="vs">vs</span><span id="playerTwo">Player 2</span></h1>
+		</header>
+		<div class="container game-container">
+
+
+			<div class="charModal container">
+				<div class="row">
+					<div class="column tenC" id="charbox">
+						<h2>Choose your animal and your piece:</h2>
+						<p>Cat's or Dog's? X's or O's?</p>
+						<div>
+							<button class="animal">Dog</button>
+							<button class="animal">Cat</button>
+							<button class="xo">X's</button>
+							<button class="xo">O's</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			<div class="row">
+				<div class="column fullC">
+					<span>&copy;2015 James Rutledge, General Assembly WDI</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
