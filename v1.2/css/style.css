@@ -7,7 +7,7 @@ body {
 }
 
 header {
-	background-color: #413D3D;
+	background-color: #3A3A3D;
 	text-align: center;
 	min-height: 150px;
 	padding: 35px 0 0 0;
@@ -25,7 +25,7 @@ h1, h5 {
 }
 
 footer {
-	background-color: #413D3D;
+	background-color: #3A3A3D;
 	height: 200px;
 }
 
@@ -105,7 +105,7 @@ footer {
 .game-container {
 	background-image: url('http://i.imgur.com/UPlQoNs.gif');
 	margin: 0;
-	padding: 25px 0 0 0;
+	padding: 0;
 	min-height: 500px;
 }
 
@@ -139,6 +139,12 @@ footer {
 	color: red;
 	font-size: 0.7em;
 	margin: 0 1em;
+}
+
+#rounds {
+	text-align: center;
+	margin: 0 48% 15px 48%;	
+	padding: 5px;
 }
 
 #reset{
