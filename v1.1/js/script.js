@@ -3,6 +3,7 @@ $(document).ready(function() {
 	var playerOne = 'X';
 	var playerTwo = 'O';
   var currentPlayer = playerOne;
+  var moveCount = 0;
 
   //This function creates a New Gameplay Array
   function newArray() {
@@ -10,9 +11,15 @@ $(document).ready(function() {
   }
   var cells = newArray();
 
+  //This function sets the moveCount to zero
+  function resetCount() {
+    return moveCount = 0;
+  }
+
   //Event Listener for Reset Game Button
   $('#reset').click(function() {
     $('.cell').html('');
+    resetCount();
     return cells = newArray();
   });
 
@@ -31,6 +38,7 @@ $(document).ready(function() {
     var player = currentPlayer;
     var cellLetter = $(this).attr('value');
     var self = this;
+    moveCount += 1;
 
     //Display Move in HTML
     function addMove(value) {
@@ -106,13 +114,26 @@ $(document).ready(function() {
         return rowO() || columnO() || diagonO();
       }
 
+      if (moveCount < 9) {
+        if (isX()) {
+          alert('X WINS!!!');
+        }
+        else if (isO()) {
+          alert('O WINS!!!');
+        }
+      }
+      else if (moveCount == 9) {
+        if (isX()) {
+          alert('X WINS!!!');
+        }
+        else if (isO()) {
+          alert('O WINS!!!');
+        }
+        else {
+          alert('TIE GAME!!!');
+        }
+      }
 
-      if (isX()) {
-        alert('X WINS!!!');
-      }
-      else if (isO()) {
-        alert('O WINS!!!');
-      }
 
     };
     getWinner();
