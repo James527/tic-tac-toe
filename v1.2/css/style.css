@@ -2,21 +2,30 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 body {
-	background-color: #fff;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
 }
 
 header {
-	background-color: #ccc;
-	height: 100px;
+	background-color: #413D3D;
 	text-align: center;
+	min-height: 150px;
+	padding: 35px 0 0 0;
 }
 
 h1 {
 	font-size: 4em;
+	margin-top: 0.3em;
+}
+
+h1, h5 {
+	text-shadow: -3px 2px 7px #000;
+	-moz-text-shadow: -3px 2px 7px #000;
+	-webkit-text-shadow: -3px 2px 7px #000;
 }
 
 footer {
-	background-color: #ccc;
+	background-color: #413D3D;
 	height: 200px;
 }
 
@@ -94,7 +103,9 @@ footer {
 }
 
 .game-container {
-	margin: 25px 0 0 0;
+	background-image: url('http://i.imgur.com/UPlQoNs.gif');
+	margin: 0;
+	padding: 25px 0 0 0;
 	min-height: 500px;
 }
 
@@ -103,11 +114,31 @@ footer {
 }
 
 .cell {
-	background-color: purple;
+	background-color: #351330;
 	margin: 15px;
 	text-align: center;
+	text-shadow: -3px 4px 10px #000;
+	-moz-text-shadow: -3px 4px 10px #000;
+	-webkit-text-shadow: -3px 4px 10px #000;
 	min-height: 70px;
-	padding-top: 50px;
+	padding: 25px 20px 20px;
+	border-right: solid #000 7px;
+	border-bottom: solid #000 7px;
+	font-size: 4em;
+}
+
+.cell:hover {
+	background-color: #540045;
+}
+
+.cell:active {
+	background-color: #C60052;
+}
+
+#vs {
+	color: red;
+	font-size: 0.7em;
+	margin: 0 1em;
 }
 
 #reset{
@@ -116,16 +147,11 @@ footer {
 	margin: 15px 48.1% 0 48.1%;
 }
 
-#cellA, #cellB, #cellD, #cellE, #cellG, #cellH {
-	border-right: solid #000 7px;
-	border-bottom: solid #000 7px;
-}
-
-#cellC, #cellF, #cellI {
-	border-bottom: solid #000 7px;
-}
-
 footer .column {
-	margin: 10px 0 0 0;
+	margin: 170px 20px 0 0;
+}
+
+footer span {
 	float: right;
+	padding-right: 25px;
 }
