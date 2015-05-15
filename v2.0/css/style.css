@@ -215,6 +215,11 @@ h3 {
 	display: none;
 }
 
+#playAgain {
+	width: 70px;
+	margin: 15px 45% 0 45%;
+}
+
 #reset{
 	text-align: center;
 	height: 25px;
@@ -319,6 +324,14 @@ footer span {
 		font-size: 1.5em;
 	}
 
+	h3 {
+		font-size: 3.7em;
+	}
+
+	h4 {
+		font-size: 0.7em;
+	}
+
 	#playerOne, #vs, #playerTwo {
 		display: block;
 
@@ -340,6 +353,15 @@ footer span {
 		padding: 0;
 	}
 
+	#roundbox {
+		margin: 0 44%;
+		width: 50px;
+	}
+
+	#winner {
+		font-size: 20em;
+	}
+
 	.cell {
 		height: 15px;
 		font-size: 1.5em;
@@ -347,5 +369,14 @@ footer span {
 
 	#leftside img, #rightside img {
 		height: 250px;
+	}
+
+	#playAgain {
+		width: 80px;
+		margin:15px 35% 0 35%;
+	}
+
+	#resetBlock {
+		display: none;
 	}
 }

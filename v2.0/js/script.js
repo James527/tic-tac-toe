@@ -53,10 +53,10 @@ $(document).ready(function() {
     return currentPlayer = playerPiece;
   }
 
-  //Event Listener for Reset Game Button
-  $('#reset').click(function() {
+  //Event Listener for Reset Game Buttons
+  $('.reset').click(function() {
     $('.cell').html('');
-    $('#end-container').toggle();
+    $('#end-container').hide();
     resetCount();
     resetChar();
     return cells = newArray();
