@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	var playerOne = 'X';
 	var playerTwo = 'O';
   var currentPlayer = playerOne;

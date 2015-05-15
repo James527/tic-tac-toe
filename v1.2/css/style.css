@@ -18,7 +18,7 @@ h1 {
 	margin-top: 0.3em;
 }
 
-h1, h5 {
+h1, h2, h3, h5, h6, p {
 	text-shadow: -3px 2px 7px #000;
 	-moz-text-shadow: -3px 2px 7px #000;
 	-webkit-text-shadow: -3px 2px 7px #000;
@@ -95,7 +95,7 @@ footer {
   width: 100%;
 }
 
-/*  CHAR MODAL STYLINGS
+/*  CHAR AND END MODAL STYLINGS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h2 {
@@ -111,7 +111,12 @@ p span {
 	margin: 0 4.6em;
 }
 
-.charModal {
+h3 {
+	text-align: center;
+	font-size: 5em;
+}
+
+#charModal {
 	height: 500px;
 }
 
@@ -138,6 +143,19 @@ p span {
 	background-color: red;
 }
 
+#end-container {
+	position: absolute;
+	z-index: 1;
+	top: 6px;
+	display: none;
+}
+
+#winner {
+	font-size: 27em;
+	text-align: center;
+	height: 0.9em;
+}
+
 
 /*  OTHER CLASS & ID STYLINGS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -147,10 +165,6 @@ p span {
 	margin: 0;
 	padding: 0;
 	min-height: 500px;
-}
-
-.game-container {
-	display: none;
 }
 
 .gameboard {
@@ -189,6 +203,10 @@ p span {
 	text-align: center;
 	margin: 0 48% 15px 48%;	
 	padding: 5px;
+}
+
+#game-container {
+	display: none;
 }
 
 #reset{

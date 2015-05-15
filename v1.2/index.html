@@ -38,10 +38,14 @@
   	<div class="container">
 		<header class="row">
 			<h5>Tic Tac Toe</h5>
-			<h1><span id="playerOne">Player 1</span><span id="vs">vs</span><span id="playerTwo">Player 2</span></h1>
+			<h1>
+				<span class="animated slideInLeft" id="playerOne">Player 1</span>
+				<span id="vs">vs</span>
+				<span class="animated slideInRight" id="playerTwo">Player 2</span>
+			</h1>
 		</header>
 		<div class="container main-container">
-			<div class="charModal container">
+			<div class="container" id="charModal">
 				<div class="row">
 					<div class="column tenC" id="charbox">
 						<h2>Choose your animal and your piece:</h2>
@@ -55,14 +59,18 @@
 						</div>
 					</div>
 				</div>
-			</div>			
-			<div class="container game-container">
+			</div><!-- End of CharModal -->	
+			<div class="container" id="game-container">
 				<div class="row">
 					<div id="rounds">Fight!</div>
 				</div>
 				<div class="row">
-					<div class="column threeC"><img class="animated slideInLeft" src="images/animals/cat.png"></div>
+					<div class="column threeC" id="leftside"></div>
 						<div class="column sixC">
+							<div class="sixC" id="end-container">
+								<h6 id="winner">X</h6>
+								<h3>WINS!!!</h3>
+							</div>
 							<div class="row container">
 								<div class="row">
 									<div class="column fourC">
@@ -99,7 +107,7 @@
 								</div>
 							</div><!-- /End of Gameboard -->
 						</div>	
-					<div class="column threeC"><img class="animated slideInRight" src="images/animals/dog.png"></div>
+					<div class="column threeC" id="rightside"></div>
 				</div>
 				<div class="row">
 					<button id="reset" value="reset">Reset</button>

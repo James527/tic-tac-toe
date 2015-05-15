@@ -1,9 +1,36 @@
 $(document).ready(function() {
-
-	var playerOne = 'X';
-	var playerTwo = 'O';
-  var currentPlayer = playerOne;
+  var playerChar = 'CAT';
+  var currentPlayer = 'X';
   var moveCount = 0;
+
+  //Event Listener for Character Selection
+  $('.animal').click(function() {
+    var beast = $(this).html();
+    if (beast == 'CAT') {
+      $('#playerOne').html('Cat');
+      $('#playerTwo').html('Dog');
+      $('#leftside').html('<img class="animated slideInLeft" src="images/Lcat.png">');
+      $('#rightside').html('<img class="animated slideInRight" src="images/Rdog.png">');
+    }
+    else if (beast == 'DOG') {
+      $('#playerOne').html('Dog');
+      $('#playerTwo').html('Cat');
+      $('#leftside').html('<img class="animated slideInLeft" src="images/Ldog.png">');
+      $('#rightside').html('<img class="animated slideInRight" src="images/Rcat.png">');
+    }
+    return playerChar = beast;
+  })
+
+  //Event Listener for Piece Selection
+  $('.xo').click(function() {
+    return currentPlayer = $(this).html();
+  })
+
+  //Event Listener for Start Button
+  $('#start').click(function() {
+    $('#charModal').toggle();
+    $('#game-container').toggle();
+  })
 
   //This function creates a New Gameplay Array
   function newArray() {
@@ -19,6 +46,7 @@ $(document).ready(function() {
   //Event Listener for Reset Game Button
   $('#reset').click(function() {
     $('.cell').html('');
+    $('#end-container').toggle();
     resetCount();
     return cells = newArray();
   });
@@ -60,77 +88,47 @@ $(document).ready(function() {
           return cells[letter];
       }
 
-                    //FUNCTIONS FOR X:
-
-      //Checks if all three claims equal X
-      function threeX(cellOne, cellTwo, cellThree) {
-        return (checkClaim(cellOne) == 'X' && checkClaim(cellTwo) == 'X' && checkClaim(cellThree) == 'X');
+      //Checks if all three claims equal currentPlayer
+      function allThree(cellOne, cellTwo, cellThree) {
+        return (checkClaim(cellOne) == currentPlayer && checkClaim(cellTwo) == currentPlayer && checkClaim(cellThree) == currentPlayer);
       }
 
-      //Checks for a row of X's
-      function rowX() {
-        return threeX('a', 'b', 'c') || threeX('d', 'e', 'f') || threeX('g', 'h', 'i');
+      //Checks for a row
+      function row() {
+        return allThree('a', 'b', 'c') || allThree('d', 'e', 'f') || allThree('g', 'h', 'i');
       }
 
-      //Checks for a column of X's
-      function columnX() {
-        return threeX('a', 'd', 'g') || threeX('b', 'e', 'h') || threeX('c', 'f', 'i');
+      //Checks for a column
+      function column() {
+        return allThree('a', 'd', 'g') || allThree('b', 'e', 'h') || allThree('c', 'f', 'i');
       }
 
-      //Checks for a diagonal slash of X's
-      function diagonX() {
-        return threeX('a', 'e', 'i') || threeX('c', 'e', 'g');
+      //Checks for a diagonal slash
+      function diagon() {
+        return allThree('a', 'e', 'i') || allThree('c', 'e', 'g');
       }
 
-      //Checks if X has three in a row, column, or diagonal
-      function isX() {
-        return rowX() || columnX() || diagonX();
+      //Checks for three in a row, column, or diagonal
+      function isGame() {
+        return row() || column() || diagon();
       }
 
-                    //FUNCTIONS FOR O:
-
-      //Checks if all three claims equal O
-      function threeO(cellOne, cellTwo, cellThree) {
-        return (checkClaim(cellOne) == 'O' && checkClaim(cellTwo) == 'O' && checkClaim(cellThree) == 'O');
-      }
-
-      //Checks for a row of O's
-      function rowO() {
-        return threeO('a', 'b', 'c') || threeO('d', 'e', 'f') || threeO('g', 'h', 'i');
-      }
-
-      //Checks for a column of O's
-      function columnO() {
-        return threeO('a', 'd', 'g') || threeO('b', 'e', 'h') || threeO('c', 'f', 'i');
-      }
-
-      //Checks for a diagonal slash of O's
-      function diagonO() {
-        return threeO('a', 'e', 'i') || threeO('c', 'e', 'g');
-      }
-
-      //Checks if O has three in a row
-      function isO() {
-        return rowO() || columnO() || diagonO();
-      }
-
+      //Finally getWinner executes all above functions
       if (moveCount < 9) {
-        if (isX()) {
-          alert('X WINS!!!');
-        }
-        else if (isO()) {
-          alert('O WINS!!!');
+        if (isGame()) {
+          $('#winner').html(currentPlayer);
+          $('#end-container').toggle();
         }
       }
       else if (moveCount == 9) {
-        if (isX()) {
-          alert('X WINS!!!');
-        }
-        else if (isO()) {
-          alert('O WINS!!!');
+        if (isGame()) {
+          $('#winner').html(currentPlayer);
+          $('#end-container').toggle();
         }
         else {
-          alert('TIE GAME!!!');
+          $('#winner').html('TIE');
+          $('h3').html('GAME!!!');
+          $('#end-container').toggle();
         }
       }
 
