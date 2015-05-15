@@ -1,0 +1,351 @@
+/*  BASIC ELEMENT STYLINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background-color: #3A3A3D;
+	text-align: center;
+	min-height: 150px;
+	padding: 35px 0 0 0;
+}
+
+h1 {
+	font-size: 4em;
+	margin-top: 0.3em;
+}
+
+h4 {
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	text-shadow: -3px 2px 7px #000;
+	-moz-text-shadow: -3px 2px 7px #000;
+	-webkit-text-shadow: -3px 2px 7px #000;
+}
+
+footer {
+	background-color: #3A3A3D;
+	height: 200px;
+}
+
+
+/*  GRID STYLINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.row {
+	clear: both;
+	width: 100%;
+}
+
+.column {
+	float: left;
+}
+
+.oneC {
+  width: 8.33333%;
+}
+
+.twoC {
+  width: 16.66666%;
+}
+
+.threeC {
+  width: 25%;
+}
+
+.fourC {
+  width: 33.33333%;
+}
+
+.fiveC {
+  width: 41.66666%;
+}
+
+.sixC, .halfC {
+  width: 50%;
+}
+
+.sevenC {
+  width: 58.33333%;
+}
+
+.eightC {
+  width: 66.66666%;
+}
+
+.nineC {
+  width: 75%;
+}
+
+.tenC {
+  width: 83.33333%;
+}
+
+.elevenC {
+  width: 91.66666%;
+}
+
+.twelveC, .fullC {
+  width: 100%;
+}
+
+/*  CHAR AND END MODAL STYLINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h2 {
+	font-size: 2.5em;
+}
+
+p {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+p span {
+	margin: 0 4.6em;
+}
+
+h3 {
+	text-align: center;
+	font-size: 5em;
+}
+
+#charModal {
+	height: 500px;
+}
+
+#charbox {
+	background-color: #ccc;
+	margin: 100px 8.33333%;
+	padding: 40px 0 0 0;
+	height: 250px;
+	text-align: center;
+}
+
+#charbox div {
+	margin:30px 0 0 0;
+}
+
+#charbox button {
+	margin:0 30px;
+	height: 50px;
+	width: 50px;
+}
+
+#start {
+	border-radius: 25px;
+	background-color: red;
+}
+
+#end-container {
+	position: absolute;
+	z-index: 1;
+	top: 6px;
+	display: none;
+}
+
+#winner {
+	font-size: 27em;
+	text-align: center;
+	height: 0.9em;
+}
+
+
+/*  OTHER CLASS & ID STYLINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main-container {
+	background-image: url('http://i.imgur.com/UPlQoNs.gif');
+	margin: 0;
+	padding: 0;
+	min-height: 500px;
+}
+
+.gameboard {
+
+}
+
+.cell {
+	background-color: #351330;
+	margin: 15px;
+	text-align: center;
+	text-shadow: -3px 4px 10px #000;
+	-moz-text-shadow: -3px 4px 10px #000;
+	-webkit-text-shadow: -3px 4px 10px #000;
+	height: 70px;
+	padding: 25px 20px 20px;
+	border-right: solid #000 7px;
+	border-bottom: solid #000 7px;
+	font-size: 4em;
+}
+
+.cell:hover {
+	background-color: #540045;
+}
+
+.cell:active {
+	background-color: #C60052;
+}
+
+#vs {
+	color: red;
+	font-size: 0.7em;
+	margin: 0 1em;
+}
+
+#roundbox {
+	text-align: center;
+	margin: 0 46.5% 15px 46.5%;	
+	padding: 5px;
+	width: 80px;
+	background-color: #ccc;
+}
+
+#game-container {
+	display: none;
+}
+
+#reset{
+	text-align: center;
+	height: 25px;
+	margin: 15px 48.1% 0 48.1%;
+}
+
+footer .column {
+	margin: 170px 20px 0 0;
+}
+
+footer span {
+	float: right;
+	padding-right: 25px;
+}
+
+
+/*  ANIMATE.CSS STYLINGS - BY DANIEL EDEN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+
+/*  @MEDIAS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media(max-width: 700px) {
+
+	h1 {
+		font-size: 3em;
+		margin-top: 0;
+		padding: 0 0 0.3em 0;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	#playerOne, #vs, #playerTwo {
+		display: block;
+
+	}
+
+	p span {
+		margin: 0 15px;
+		font-size: 0.7em;
+	}
+
+	#charbox {
+		margin: 50px 8.33333%;
+		height: 200px;
+	}
+
+	#charbox button {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.cell {
+		height: 15px;
+		font-size: 1.5em;
+	}
+
+	#leftside img, #rightside img {
+		height: 250px;
+	}
+}
