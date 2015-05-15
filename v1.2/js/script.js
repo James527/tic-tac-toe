@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  var playerChar = 'CAT';
+  var playerChar;
+  var playerPiece;
   var currentPlayer = 'X';
   var moveCount = 0;
 
@@ -11,19 +12,22 @@ $(document).ready(function() {
       $('#playerTwo').html('Dog');
       $('#leftside').html('<img class="animated slideInLeft" src="images/Lcat.png">');
       $('#rightside').html('<img class="animated slideInRight" src="images/Rdog.png">');
+      return playerChar = 'CAT';
     }
     else if (beast == 'DOG') {
       $('#playerOne').html('Dog');
       $('#playerTwo').html('Cat');
       $('#leftside').html('<img class="animated slideInLeft" src="images/Ldog.png">');
       $('#rightside').html('<img class="animated slideInRight" src="images/Rcat.png">');
+      return playerChar = 'DOG';
     }
     return playerChar = beast;
   })
 
   //Event Listener for Piece Selection
   $('.xo').click(function() {
-    return currentPlayer = $(this).html();
+    return playerPiece = $(this).html();
+    alert(playerPiece);
   })
 
   //Event Listener for Start Button
@@ -43,11 +47,17 @@ $(document).ready(function() {
     return moveCount = 0;
   }
 
+  //This function sets currentPlayer back to playerChar
+  function resetChar() {
+    return currentPlayer = playerPiece;
+  }
+
   //Event Listener for Reset Game Button
   $('#reset').click(function() {
     $('.cell').html('');
     $('#end-container').toggle();
     resetCount();
+    resetChar();
     return cells = newArray();
   });
 
@@ -113,7 +123,7 @@ $(document).ready(function() {
         return row() || column() || diagon();
       }
 
-      //Finally getWinner executes all above functions
+      //Finally getWinner executes all above functions and displays the winner
       if (moveCount < 9) {
         if (isGame()) {
           $('#winner').html(currentPlayer);
