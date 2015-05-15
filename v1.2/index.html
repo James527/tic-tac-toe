@@ -40,55 +40,72 @@
 			<h5>Tic Tac Toe</h5>
 			<h1><span id="playerOne">Player 1</span><span id="vs">vs</span><span id="playerTwo">Player 2</span></h1>
 		</header>
-		<div class="container game-container">
-			<div class="row">
-				<div id="rounds">Fight!</div>
-			</div>
-			<div class="row">
-				<div class="column threeC"><img class="animated slideInLeft" src="images/animals/cat.png"></div>
-					<div class="column sixC">
-						<div class="row container">
-							<div class="row">
-								<div class="column fourC">
-									<div class="cell" id="cellA" value="a"></div>
+		<div class="container main-container">
+			<div class="charModal container">
+				<div class="row">
+					<div class="column tenC" id="charbox">
+						<h2>Choose your animal and your piece:</h2>
+						<p><span>Cat or Dog?</span><span>X or O?</span></p>
+						<div class="row">
+							<button class="animal">CAT</button>
+							<button class="animal">DOG</button>
+							<button id="start">START</button>
+							<button class="xo">X</button>
+							<button class="xo">O</button>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div class="container game-container">
+				<div class="row">
+					<div id="rounds">Fight!</div>
+				</div>
+				<div class="row">
+					<div class="column threeC"><img class="animated slideInLeft" src="images/animals/cat.png"></div>
+						<div class="column sixC">
+							<div class="row container">
+								<div class="row">
+									<div class="column fourC">
+										<div class="cell" id="cellA" value="a"></div>
+									</div>
+									<div class="column fourC">
+										<div class="cell" id="cellB" value="b"></div>
+									</div>
+									<div class="column fourC">
+										<div class="cell" id="cellC" value="c"></div>
+									</div>
 								</div>
-								<div class="column fourC">
-									<div class="cell" id="cellB" value="b"></div>
+								<div class="row">
+									<div class="column fourC">
+										<div class="cell" id="cellD" value="d"></div>
+									</div>
+									<div class="column fourC">
+										<div class="cell" id="cellE" value="e"></div>
+									</div>
+									<div class="column fourC">
+										<div class="cell" id="cellF" value="f"></div>
+									</div>
 								</div>
-								<div class="column fourC">
-									<div class="cell" id="cellC" value="c"></div>
+								<div class="row">
+									<div class="column fourC">
+										<div class="cell" id="cellG" value="g"></div>
+									</div>
+									<div class="column fourC">
+										<div class="cell" id="cellH" value="h"></div>
+									</div>
+									<div class="column fourC">
+										<div class="cell" id="cellI" value="i"></div>
+									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="column fourC">
-									<div class="cell" id="cellD" value="d"></div>
-								</div>
-								<div class="column fourC">
-									<div class="cell" id="cellE" value="e"></div>
-								</div>
-								<div class="column fourC">
-									<div class="cell" id="cellF" value="f"></div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="column fourC">
-									<div class="cell" id="cellG" value="g"></div>
-								</div>
-								<div class="column fourC">
-									<div class="cell" id="cellH" value="h"></div>
-								</div>
-								<div class="column fourC">
-									<div class="cell" id="cellI" value="i"></div>
-								</div>
-							</div>
-						</div><!-- /End of Gameboard -->
-					</div>	
-				<div class="column threeC"><img class="animated slideInRight" src="images/animals/dog.png"></div>
-			</div>
-			<div class="row">
-				<button id="reset" value="reset">Reset</button>
-			</div>
-		</div><!-- /End of Game-Container -->
+							</div><!-- /End of Gameboard -->
+						</div>	
+					<div class="column threeC"><img class="animated slideInRight" src="images/animals/dog.png"></div>
+				</div>
+				<div class="row">
+					<button id="reset" value="reset">Reset</button>
+				</div>
+			</div><!-- End of Game-Container -->
+		</div><!-- End of Main-Container -->
 		<footer>
 			<div class="row">
 				<div class="column fullC">
