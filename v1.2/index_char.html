@@ -31,19 +31,22 @@
 #charbox {
 	background-color: #ccc;
 	margin: 100px 8.33333%;
-	padding: 50px 0 0 0;
+	padding: 40px 0 0 0;
 	height: 250px;
 	text-align: center;
 }
 
 #charbox div {
-	margin:45px 0 0 0;
+	margin:30px 0 0 0;
 }
 
 #charbox button {
-	height: 60px;
-	width: 60px;
 	margin:0 30px;
+	height: 50px;
+	width: 50px;
+}
+
+.animal {
 }
 
 h2 {
@@ -52,7 +55,11 @@ h2 {
 
 p {
 	font-size: 1.5em;
-	margin-top: 10px;
+	margin-top: 20px;
+}
+
+span {
+	margin: 0 1.8em;
 }
 
 	</style>
@@ -82,12 +89,12 @@ p {
 				<div class="row">
 					<div class="column tenC" id="charbox">
 						<h2>Choose your animal and your piece:</h2>
-						<p>Cat's or Dog's? X's or O's?</p>
-						<div>
-							<button class="animal">Dog</button>
-							<button class="animal">Cat</button>
-							<button class="xo">X's</button>
-							<button class="xo">O's</button>
+						<p><span>Cat or Dog?</span><span>X or O?</span></p>
+						<div class="row">
+							<button class="animal">CAT</button>
+							<button class="animal">DOG</button>
+							<button class="xo">X</button>
+							<button class="xo">O</button>
 						</div>
 					</div>
 				</div>
